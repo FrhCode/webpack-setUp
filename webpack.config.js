@@ -8,7 +8,7 @@ const { populateHtmlPlugins } = require("./webpack.helper.js");
 
 module.exports = {
     mode: "development",
-    // devtool: false,
+    devtool: false,
     entry: "./src/js/index.js",
     output: {
         path: path.resolve(__dirname, "dist/"),
@@ -23,7 +23,6 @@ module.exports = {
     ].concat(
         populateHtmlPlugins(
             'index.html',
-            'contact.html'
         )
     ),
     module: {
@@ -43,6 +42,25 @@ module.exports = {
             {
                 test: /\.scss$/i,
                 use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+            },
+            {
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        // prettier-ignore
+                        presets: [
+                            [
+                                "@babel/preset-env",
+                                {
+                                    "targets": "> 0.25%, not dead"
+                                }
+                            ]
+                        ],
+                        plugins: ["@babel/plugin-transform-runtime"],
+                    },
+                },
             },
         ],
     },
