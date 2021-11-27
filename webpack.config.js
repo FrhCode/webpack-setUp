@@ -23,6 +23,7 @@ module.exports = {
     ].concat(
         populateHtmlPlugins(
             'index.html',
+            // add your html here             
         )
     ),
     module: {
