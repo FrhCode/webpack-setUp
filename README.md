@@ -23,7 +23,7 @@
 ## FAQ
 ### Q1 : work with multiple html
 **A : ** create new html file in src directory, then open webpack.config.js then add the file to the config.
-![img](./src/img1.png)
+![img](./src/img.png)
 
 
 ### Q2 : how to import scss file
