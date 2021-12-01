@@ -15,8 +15,8 @@
 5. can be customized as needed
 
 ## Command
-### npm start
-> npm start `it will create new folder call dist, with your code there.`
+### npm build
+> npm build `it will create new folder call dist, with your code there.`
 ### npm run watch
 > npm run watch `it will run a dev server, with auto reload when there is a change in a file.`
 
