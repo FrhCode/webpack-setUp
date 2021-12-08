@@ -3,7 +3,7 @@
 ## how to install
 - Make sure git is installed, [see how to install git](https://www.google.com/search?q=how+to+isntall+git&oq=how+to+isntall+git&aqs=chrome..69i57j0i10l9.4306j0j7&sourceid=chrome&ie=UTF-8). 
 - open your terminal or cmd 
-- copy this text to terminal "git clone https://github.com/MohammadFarhan7534031b/webpack-setUp.git my_project"
+- copy this text to terminal "https://github.com/FrhCode/webpack-setUp.git my_project"
 - copy this text to terminal "cd my_project"
 - copy this text to terminal "npm install"
 
